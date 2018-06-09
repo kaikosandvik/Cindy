@@ -3,7 +3,7 @@ var express = require('express');
 
 var bot = linebot({
   channelId: '1586338101',
-  channelSecret: 'c67cb682c2dc34cbd9d601fdbc6e7d6b',
+  channelSecret: '9e60b5dab4058c2b2665648c9d8beeae',
   channelAccessToken: 'qSN3YcTHfx3vxESD+qaacqSUkUW+RmoY16kREXiILYrsOk5lXKUpuN7orpaYjFBPtYo205jffGk3q1TnO58hUP/Xepb/jNQ9kYRsYghw3a5qRFjhXcSMun+L55Ol6oWnujlP4yDQxGO1eTdSxQ+ycwdB04t89/1O/w1cDnyilFU='
 });
 
@@ -28,5 +28,5 @@ app.post('/', linebotParser);
 
 var server = app.listen(process.env.PORT || 8080, function() {
   var port = server.address().port;
-  console.log('目前的port是', port);
+  console.log('192.168.0.18', port);
 });
