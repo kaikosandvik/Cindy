@@ -10,10 +10,7 @@ var bot = linebot({
 //這一段的程式是專門處理當有人傳送文字訊息給LineBot時，我們的處理回應
 bot.on('message', function(event) {
   if (event.message.type = 'text') {
-    var {
-  "type": "text",
-  "text": "您好,\n請問需求類別?\n1.訂購-凱國\n2.訂購-鈿洋\n3.WTO詢價\n4.山特查價與交期\n5.打報價單\n6.登二級\n7.寄目錄\n8.其他,請自填"
-}
+    var msg = event.message.text;
   //收到文字訊息時，直接把收到的訊息傳回去
     event.reply(msg).then(function(data) {
       // 傳送訊息成功時，可在此寫程式碼 
