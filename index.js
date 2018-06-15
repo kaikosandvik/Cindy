@@ -12,7 +12,7 @@ var bot = linebot({
 });
 
 //底下輸入client_secret.json檔案的內容
-var myClientSecret={"installed":{"client_id":"999457019361-l3qactc2rq708jplcbu5cd6is0qudnet.apps.googleusercontent.com","project_id":"sylvan-chess-206714","auth_uri":"https://accounts.google.com/o/oauth2/auth","token_uri":"https://accounts.google.com/o/oauth2/token","auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs","client_secret":"WAZsKtPd2JS9sWL6l2cgC5cW","redirect_uris":["urn:ietf:wg:oauth:2.0:oob","http://localhost"]}}
+var myClientSecret={"client_id":"999457019361-l3qactc2rq708jplcbu5cd6is0qudnet.apps.googleusercontent.com","project_id":"sylvan-chess-206714","auth_uri":"https://accounts.google.com/o/oauth2/auth","token_uri":"https://accounts.google.com/o/oauth2/token","auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs","client_secret":"WAZsKtPd2JS9sWL6l2cgC5cW","redirect_uris":["urn:ietf:wg:oauth:2.0:oob","http://localhost"]}}
 
 var auth = new googleAuth();
 var oauth2Client = new auth.OAuth2(myClientSecret.installed.client_id,myClientSecret.installed.client_secret, myClientSecret.installed.redirect_uris[0]);
