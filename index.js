@@ -12,13 +12,13 @@ var bot = linebot({
 });
 
 //底下輸入client_secret.json檔案的內容
-var myClientSecret="client_id":"999457019361-l3qactc2rq708jplcbu5cd6is0qudnet.apps.googleusercontent.com","project_id":"sylvan-chess-206714","auth_uri":"https://accounts.google.com/o/oauth2/auth","token_uri":"https://accounts.google.com/o/oauth2/token","auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs","client_secret":"WAZsKtPd2JS9sWL6l2cgC5cW","redirect_uris":["urn:ietf:wg:oauth:2.0:oob","http://localhost"]
+var myClientSecret={"installed":{"client_id":"999457019361-l3qactc2rq708jplcbu5cd6is0qudnet.apps.googleusercontent.com","project_id":"sylvan-chess-206714","auth_uri":"https://accounts.google.com/o/oauth2/auth","token_uri":"https://accounts.google.com/o/oauth2/token","auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs","client_secret":"WAZsKtPd2JS9sWL6l2cgC5cW","redirect_uris":["urn:ietf:wg:oauth:2.0:oob","http://localhost"]}}
 
 var auth = new googleAuth();
 var oauth2Client = new auth.OAuth2(myClientSecret.installed.client_id,myClientSecret.installed.client_secret, myClientSecret.installed.redirect_uris[0]);
 
 //底下輸入sheetsapi.json檔案的內容
-oauth2Client.credentials ="access_token":"ya29.GlvbBRni-LtBdd5Uzk_fcKu8zLe91glLHA6S0DRt59lhJVTVf1uI09R6F_jvO-Mfuo3JJO6FsK_6LIp7DeWxJJccVdyQaZdTRYiWSFL0OX4ViPgxQUBrbhjsknqj","token_type":"Bearer","refresh_token":"1/0E6Szd3oPzEk9KxgWRjfNctuuqgM-6SB5H67F14iUbY","expiry_date":1529080482772
+oauth2Client.credentials ={"access_token":"ya29.GlvbBRni-LtBdd5Uzk_fcKu8zLe91glLHA6S0DRt59lhJVTVf1uI09R6F_jvO-Mfuo3JJO6FsK_6LIp7DeWxJJccVdyQaZdTRYiWSFL0OX4ViPgxQUBrbhjsknqj","token_type":"Bearer","refresh_token":"1/0E6Szd3oPzEk9KxgWRjfNctuuqgM-6SB5H67F14iUbY","expiry_date":1529080482772}
 
 //試算表的ID，引號不能刪掉
 var mySheetId='1zk7x52AfrlhDlWsROWhVPZwU2ppDd31okpf8dACb0hc';
